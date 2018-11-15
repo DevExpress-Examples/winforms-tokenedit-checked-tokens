@@ -1,3 +1,21 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[CustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEdit.cs)**
+* [CustomTokenEditCheckedItemCollection.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditCheckedItemCollection.cs)
+* [CustomTokenEdithandler.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEdithandler.cs)
+* [CustomTokenEditHitInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditHitInfo.cs)
+* [CustomTokenEditPainter.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditPainter.cs)
+* [CustomTokenEditSelectedItemCollection.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditSelectedItemCollection.cs)
+* [CustomTokenEditToken.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditToken.cs)
+* [CustomTokenEditTokenInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditTokenInfo.cs)
+* [CustomTokenEditValidationController.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditValidationController.cs)
+* [CustomTokenEditViewInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditViewInfo.cs)
+* [RepositoryItemCustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/RepositoryItemCustomTokenEdit.cs)
+* [TokenCheckedChangedEventArgs.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/TokenCheckedChangedEventArgs.cs)
+* [Form1.cs](./CS/TokenEdit_Glyph_InEndOfToken/Form1.cs)
+* [Program.cs](./CS/TokenEdit_Glyph_InEndOfToken/Program.cs)
+<!-- default file list end -->
 # TokenEdit - How to add a check box to a token
 
 
