@@ -9,7 +9,6 @@
 * [CustomTokenEditSelectedItemCollection.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditSelectedItemCollection.cs)
 * [CustomTokenEditToken.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditToken.cs)
 * [CustomTokenEditTokenInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditTokenInfo.cs)
-* [CustomTokenEditValidationController.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditValidationController.cs)
 * [CustomTokenEditViewInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditViewInfo.cs)
 * [RepositoryItemCustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/RepositoryItemCustomTokenEdit.cs)
 * [TokenCheckedChangedEventArgs.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/TokenCheckedChangedEventArgs.cs)
