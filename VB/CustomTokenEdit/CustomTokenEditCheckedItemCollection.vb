@@ -7,11 +7,11 @@ Namespace Example.CustomTokenEdit
 	Public Class CustomTokenEditCheckedItemCollection
 		Inherits TokenEditCheckedItemCollection
 
-		Public Sub New(ByVal properties As RepositoryItemTokenEdit)
-			MyBase.New(properties)
-		End Sub
+        Public Sub New(ByVal properties As RepositoryItemTokenEdit)
+            MyBase.New(properties)
+        End Sub
 
-		Default Public ReadOnly Property Item(ByVal index As Integer) As CustomTokenEditToken
+        Default Public ReadOnly Property Item(ByVal index As Integer) As CustomTokenEditToken
 			Get
 				Return DirectCast(InnerList(index), CustomTokenEditToken)
 			End Get
