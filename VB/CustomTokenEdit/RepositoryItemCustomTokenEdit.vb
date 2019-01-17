@@ -14,7 +14,7 @@ Namespace Example.CustomTokenEdit
             Register()
         End Sub
         Public Sub New()
-            checkBoxCollection_Renamed = GetCheckBoxImages()
+            _checkBoxCollection = GetCheckBoxImages()
         End Sub
 
         Friend Const EditorName As String = "CustomTokenEdit"
@@ -33,10 +33,10 @@ Namespace Example.CustomTokenEdit
         End Property
 
         'INSTANT VB NOTE: The variable checkBoxCollection was renamed since Visual Basic does not allow variables and other class members to have the same name:
-        Private ReadOnly checkBoxCollection_Renamed As ImageCollection
+        Private ReadOnly _checkBoxCollection As ImageCollection
         Public ReadOnly Property CheckBoxCollection() As ImageCollection
             Get
-                Return checkBoxCollection_Renamed
+                Return _checkBoxCollection
             End Get
         End Property
 
@@ -49,16 +49,17 @@ Namespace Example.CustomTokenEdit
             Return skinElement.Image.GetImages()
         End Function
 
-        Protected Overrides Function CreateValidationController() As TokenEditValidationController
-            Return New CustomTokenEditValidationController(Me)
-        End Function
-
         Protected Overrides Function CreateCheckedItemCollection() As TokenEditCheckedItemCollection
             Return New CustomTokenEditCheckedItemCollection(Me)
         End Function
 
         Protected Overrides Function CreateSelectedItemCollection() As TokenEditSelectedItemCollection
             Return New CustomTokenEditSelectedItemCollection(Me)
+        End Function
+
+        Protected Overrides Function CreateTokenInstance(description As String, value As Object, autoPopulated As Boolean) As TokenEditToken
+            Dim token As New CustomTokenEditToken(description, value, TryCast(Properties, RepositoryItemCustomTokenEdit))
+            Return token
         End Function
 
         Public Event TokenCheckedChanged As EventHandler(Of TokenCheckedChangedEventArgs)

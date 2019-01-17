@@ -42,16 +42,16 @@ Namespace Example.CustomTokenEdit
 			CustomToken.Checked = Not CustomToken.Checked
 		End Sub
 
-'INSTANT VB NOTE: The variable checkBoxState was renamed since Visual Basic does not allow variables and other class members to have the same name:
-		Private checkBoxState_Renamed As ObjectState
-		Public Property CheckBoxState() As ObjectState
-			Get
-				Return checkBoxState_Renamed
-			End Get
-			Set(ByVal value As ObjectState)
-				If checkBoxState_Renamed <> value Then
-					checkBoxState_Renamed = value
-					OnCheckBoxStateChanged()
+
+        Private _checkBoxState As ObjectState
+        Public Property CheckBoxState() As ObjectState
+            Get
+                Return _checkBoxState
+            End Get
+            Set(ByVal value As ObjectState)
+                If _checkBoxState <> value Then
+                    _checkBoxState = value
+                    OnCheckBoxStateChanged()
 				End If
 			End Set
 		End Property
