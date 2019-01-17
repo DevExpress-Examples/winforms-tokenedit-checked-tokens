@@ -36,11 +36,6 @@ namespace TokenEdit_Glyph_InEndOfToken.CustomTokenEdit
             return skinElement.Image.GetImages();
         }
 
-        protected override TokenEditValidationController CreateValidationController()
-        {
-            return new CustomTokenEditValidationController(this);
-        }
-
         protected override TokenEditCheckedItemCollection CreateCheckedItemCollection()
         {
             return new CustomTokenEditCheckedItemCollection(this);
@@ -49,6 +44,11 @@ namespace TokenEdit_Glyph_InEndOfToken.CustomTokenEdit
         protected override TokenEditSelectedItemCollection CreateSelectedItemCollection()
         {
             return new CustomTokenEditSelectedItemCollection(this);
+        }
+
+        protected override TokenEditToken CreateTokenInstance(string description, object value, bool autoPopulated) {
+            CustomTokenEditToken token = new CustomTokenEditToken(description, value, this as RepositoryItemCustomTokenEdit);
+            return token;
         }
 
         public event EventHandler<TokenCheckedChangedEventArgs> TokenCheckedChanged;
