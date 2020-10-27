@@ -9,6 +9,6 @@ namespace TokenEdit_Glyph_InEndOfToken.CustomTokenEdit
     {
         public CustomTokenEditSelectedItemCollection(RepositoryItemTokenEdit properties) : base(properties) { }
 
-        public CustomTokenEditToken this[int index] { get { return (CustomTokenEditToken)InnerList[index]; } }
+        public new CustomTokenEditToken this[int index] { get { return (CustomTokenEditToken)InnerList[index]; } }
     }
 }
