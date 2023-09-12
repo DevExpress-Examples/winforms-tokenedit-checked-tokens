@@ -3,10 +3,23 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T315168)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* **[CustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEdit.cs)**
+# WinForms TokenEdit - Create checked tokens
+
+This example creates a custom token editor (`CustomTokenEdit`) that displays a checkbox in tokens.
+
+![WinForms TokenEdit - Display a checkbox in a token](https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/f444211d-abe7-11e5-80bf-00155d62480c.png)
+
+You can use the custom token editor as a standalone editor or as a cell editor in data-aware controls (for example, Data Grid, TreeList).
+
+![Custom Token Cell Editor - WinForms Data Grid](https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/836600b8-abed-11e5-80bf-00155d62480c.png)
+
+Tokens are of the `CustomTokenEditToken` type. This class inherits base functionality from the [TokenEditToken]() class and introduces a new `Checked` property. When the checked state of a token changes, the editor raises the `RepositoryItemCustomTokenEdit.TokenCheckedChanged` event.
+
+
+## Files to Review
+
+* [CustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEdit.cs)
 * [CustomTokenEditCheckedItemCollection.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditCheckedItemCollection.cs)
 * [CustomTokenEdithandler.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEdithandler.cs)
 * [CustomTokenEditHitInfo.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/CustomTokenEditHitInfo.cs)
@@ -18,19 +31,10 @@
 * [RepositoryItemCustomTokenEdit.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/RepositoryItemCustomTokenEdit.cs)
 * [TokenCheckedChangedEventArgs.cs](./CS/TokenEdit_Glyph_InEndOfToken/CustomTokenEdit/TokenCheckedChangedEventArgs.cs)
 * [Form1.cs](./CS/TokenEdit_Glyph_InEndOfToken/Form1.cs)
-* [Program.cs](./CS/TokenEdit_Glyph_InEndOfToken/Program.cs)
-<!-- default file list end -->
-# TokenEdit - How to add a check box to a token
 
 
-<p><br>This example demonstrates how to add a check box to the end of a token.</p>
-<br><img src="https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/f444211d-abe7-11e5-80bf-00155d62480c.png"><br><br>
-<p>The <strong>CustomTokenEdit</strong> editor implemented in this example enhances the <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument17088"><strong>TokenEdit</strong></a><strong> </strong>editor functionality.<br>If you have already used <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument17088"><strong>TokenEdit</strong></a><strong> </strong>and would like to get such a functionality in your project, you can simply substitute  <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument17088"><strong>TokenEdit</strong></a><strong> </strong>with <strong>CustomTokenEdit</strong>.<br><br><br></p>
-<p>The <strong>CustomTokenEdit </strong>editor as well as its predecessor <a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument17088"><strong>TokenEdit</strong></a><strong> </strong><strong> </strong>can also be used in In-place mode:</p>
-<img src="https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/836600b8-abed-11e5-80bf-00155d62480c.png"><br><br><br>
-<p>Tokens of the <strong>CustomTokenEdit </strong>editor have the <strong>CustomTokenEditToken </strong>type, which enhances the default <strong>TokenEditToken </strong>implementation with the <strong>Checked</strong> property that can be used to check / uncheck this token from code or determine whether a token is checked or not. When a token is checked / unchecked, the <strong>RepositoryItemCustomTokenEdit.TokenCheckedChanged </strong>event is raised. You can handle this event in order to notify related objects of this change. The event handler receives an argument of the <strong>TokenCheckedChangedEventArgs </strong>type containing data related to this event. </p>
-<br><br>See also:<br><a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument17088">Token Edit Control</a><br><a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument4716">Custom Editors</a><br><a href="https://documentation.devexpress.com/#WindowsForms/CustomDocument745">In-place Editors Overview</a>
+## See Also
 
-<br/>
-
-
+* [Token Edit Control](https://docs.devexpress.com/WindowsForms/17088/controls-and-libraries/editors-and-simple-controls/token-edit-control)
+* [Custom Editors](https://docs.devexpress.com/WindowsForms/4716/controls-and-libraries/editors-and-simple-controls/common-editor-features-and-concepts/custom-editors)
+* [In-place Editors Overview](https://docs.devexpress.com/WindowsForms/753/controls-and-libraries/data-grid/data-editing-and-validation/modify-and-validate-cell-values)
