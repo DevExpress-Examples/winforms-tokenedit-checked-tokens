@@ -17,9 +17,9 @@ namespace TokenEdit_Glyph_InEndOfToken.CustomTokenEdit
         }
 
         readonly Dictionary<TokenEditToken, Rectangle> checkBoxBounds;
-        protected override Rectangle CalcBounds(Point topPt, Size tokenSize, TokenEditToken token)
+        protected override Rectangle CalcBounds(Point topPt, TokenEditToken token)
         {
-            Rectangle rect = base.CalcBounds(topPt, tokenSize, token);
+            Rectangle rect = base.CalcBounds(topPt, token);
             Rectangle temp = CalcGlyphBounds(token, rect);
             checkBoxBounds[token] = new Rectangle(rect.Right, temp.Top, temp.Width, temp.Height);
             rect.Width += CalcGlyphWidth(token) + ItemContentMargin;
