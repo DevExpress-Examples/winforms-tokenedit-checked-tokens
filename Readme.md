@@ -9,7 +9,7 @@
 
 This example creates a custom token editor (`CustomTokenEdit`) that displays a checkbox in tokens.
 
-![WinForms TokenEdit - Display a checkbox in a token](https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/f444211d-abe7-11e5-80bf-00155d62480c.png)
+![WinForms TokenEdit - Display a checkbox in a token](media/f444211d-abe7-11e5-80bf-00155d62480c.png)
 
 You can use the custom token editor as a standalone editor or as a cell editor in data-aware controls (for example, Data Grid, TreeList).
 
@@ -46,3 +46,4 @@ Tokens are of the `CustomTokenEditToken` type. This class inherits base functio
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
