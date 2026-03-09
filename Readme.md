@@ -13,7 +13,7 @@ This example creates a custom token editor (`CustomTokenEdit`) that displays a c
 
 You can use the custom token editor as a standalone editor or as a cell editor in data-aware controls (for example, Data Grid, TreeList).
 
-![Custom Token Cell Editor - WinForms Data Grid](https://raw.githubusercontent.com/DevExpress-Examples/tokenedit-how-to-add-a-check-box-to-a-token-t315168/15.1.8+/media/836600b8-abed-11e5-80bf-00155d62480c.png)
+![Custom Token Cell Editor - WinForms Data Grid](media/836600b8-abed-11e5-80bf-00155d62480c.png)
 
 Tokens are of the `CustomTokenEditToken` type. This class inherits base functionality from the [TokenEditToken]() class and introduces a new `Checked` property. When the checked state of a token changes, the editor raises the `RepositoryItemCustomTokenEdit.TokenCheckedChanged` event.
 
@@ -46,3 +46,4 @@ Tokens are of the `CustomTokenEditToken` type. This class inherits base functio
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
